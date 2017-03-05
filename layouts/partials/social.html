@@ -1,9 +1,21 @@
-{{ with .Site.Social.twitter }}
-<li><a href="//twitter.com/{{.}}" class="icon-twitter" target="_blank" title="Twitter"></a></li>
+{{ with .Site.Social.instagram }}
+<li><a href="//instagram.com/{{.}}" class="icon-instagram" target="_blank" title="Instagram"></a></li>
+{{ end }}
+
+{{ with .Site.Social.pinterest }}
+<li>
+    <a href="//pinterest.com/{{.}}" target="_blank" title="pinterest">
+        <i class="fa fa-pinterest">&nbsp;</i>
+    </a>
+</li>
 {{ end }}
 
 {{ with .Site.Social.facebook }}
 <li><a href="//facebook.com/{{.}}" class="icon-facebook-squared" target="_blank" title="Facebook"></a></li>
+{{ end }}
+
+{{ with .Site.Social.twitter }}
+<li><a href="//twitter.com/{{.}}" class="icon-twitter" target="_blank" title="Twitter"></a></li>
 {{ end }}
 
 {{ with .Site.Social.linkedin }}
@@ -16,10 +28,6 @@
 
 {{ with .Site.Social.dribbble }}
 <li><a href="//dribbble.com/{{.}}" class="icon-dribbble" target="_blank" title="Dribbble"></a></li>
-{{ end }}
-
-{{ with .Site.Social.instagram }}
-<li><a href="//instagram.com/{{.}}" class="icon-instagram" target="_blank" title="Instagram"></a></li>
 {{ end }}
 
 {{ with .Site.Social.github }}
